@@ -1,0 +1,81 @@
+/* Root variables */
+:root {
+  /* HSL values */
+  --hsl-clr-white: 0, 0%, 100%;
+  --hsl-clr-gray: 212, 45%, 89%;
+  --hsl-clr-blue: 220, 15%, 55%;
+  --hsl-clr-dark-blue: 218, 44%, 22%;
+
+  /* Colors from HSL */
+  --clr-white: hsl(var(--hsl-clr-white));
+  --clr-gray: hsl(var(--hsl-clr-gray));
+  --clr-blue: hsl(var(--hsl-clr-blue));
+  --clr-dark-blue: hsl(var(--hsl-clr-dark-blue));
+
+  --border-radius: 1rem;
+  --font-size-p: 15px;
+  --font-size: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: var(--font-size);
+  /* color: var(--clr-white); */
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-gray);
+}
+
+.qr-code {
+  width: 90%;
+  max-width: 18.5rem;
+  background-color: var(--clr-white);
+  border-radius: var(--border-radius);
+  padding: 1rem 1rem 2rem;
+
+  display: grid;
+  place-content: start;
+  gap: 1rem;
+
+  text-align: center;
+  box-shadow: 0.5rem 1rem 1rem hsla(var(--hsl-clr-blue), 0.2);
+}
+.qr-code img {
+  border-radius: var(--border-radius);
+}
+.qr-code h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--clr-dark-blue);
+}
+
+.qr-code p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--clr-blue);
+}
+
+/* Attribution  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
